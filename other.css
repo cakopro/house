@@ -1,0 +1,36 @@
+/* hover sobre usuario contenedor*/
+.usuario_contenedor:hover{
+    background-color: whitesmoke;
+}
+/* muestra la lista oculta al pasar por el menu de tres lineas y crear un punete invisible para que no se cierre al bajar */
+.contenedor_menu:hover .div_hijo_menu_inv,
+.contenedor_menu:hover .caja_invi,
+.caja_invi:hover + .div_hijo_menu_inv,
+.div_hijo_menu_inv:hover {
+  display: grid;
+}
+
+/*  Mostrar el input cuando el checkbox esté activado */
+#activarEntrada:checked ~ .div_entrada_padre .entrada_invisible {
+    display: block;
+}
+
+/* SOLO CARRITO CAMBIA DE FONDO AL HOVER */
+.contenedor_carrito:hover {
+    display: block;
+    background-color: whitesmoke;
+}
+
+/* este hover reprenseta el ingreso para cada red social azul para facebook y rosa para instagram*/
+.facebook:hover{
+    display: block;
+    background-color: aqua;
+    color: black;
+}
+
+.instagram:hover{
+    display: block;
+    background-color: plum;
+    color: black;
+}
+

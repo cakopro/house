@@ -1,0 +1,249 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.container_fila1 {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    background-color:white;
+    white-space: nowrap;
+    align-items: center;     
+    justify-items: center;
+    margin-bottom: 10px;
+}
+.list_item_fila_1 {
+    list-style-type: none;
+    margin: 0;
+}
+
+.list_item_fila_1 li{
+    white-space: nowrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,  sans-serif;
+    color: #525151;
+}
+
+.div_usuario_ofertas {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    left: 10px;
+}
+.usuario_contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 0px;
+    cursor: pointer;
+}
+.div_naranjo {
+    display: grid;
+    width: 95px;
+    height: 21px;
+    background-color: orangered;
+    place-items: center;
+    color : #fff;
+    cursor: pointer;
+    border-radius: 20px;  
+}
+.div_naranjo p {
+    margin: 0;
+}
+.pregion{
+    margin-right: 140px;
+    position: relative;
+    left: 50px;
+}
+
+.div_centro_fila1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*FILA 2 ABAJO: */
+
+.container_f2 {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    background-color:white;
+    align-items: center;    
+    align-content: center; 
+    justify-items: center;
+    place-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    column-gap: 0px;
+}
+
+.list_item_fila_2 {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    place-items: center;
+    list-style-type: none;
+    align-content: center;
+    gap: 30px; 
+    position: relative;
+    left: 40px;
+}
+
+.list_item_fila_2 li {
+    white-space: nowrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,  sans-serif;
+    font-weight: 600; /*grosor */
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+/* fila 2 columna 3 lista asignar 5 columnas.*/
+.list_2_item_fila_2 {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    place-items: center;
+    list-style-type: none;
+    gap: 30px; 
+    position: relative;
+    right: 50px;
+}
+
+.list_2_item_fila_2 li {
+    white-space: nowrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,  sans-serif;
+    font-weight: 600; /*grosor */
+    font-size: 14px;
+    color: #4b4b4b;
+}
+
+.fila2_derecha {
+    display: grid;
+    grid-template-columns: auto auto; /* lista + íconos */
+    align-items: center;
+    gap: 0px;
+    position: relative;
+    right: 20px;
+    
+}
+
+.iconos_nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 35px;
+    position: relative;
+    right: 20px;
+}
+
+.contenedor_busqueda,
+.contenedor_carrito {
+    position: relative;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.logo{
+    display: grid;
+    place-content: center;
+}
+
+/* MENU.*/
+.contenedor_menu{
+    position: relative;
+}
+.div_hijo_menu_inv {
+    display: none;
+    position: absolute;
+    top: 250%; /* Para que se quede abajo de columna 2*/
+    left: -180px; /* mueve todo izquierda para que la lista este a la izquierda*/
+}
+  
+.div_menu {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background-color: white;
+    width: 1525px; /* Para que llegue a toda la pantalla*/
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+  
+.nav_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.caja_invi {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    height: 100px; 
+    background: transparent;
+    z-index: 5;
+} 
+
+.nav_menu ul li {
+    padding: 10px 40px; /*  Para que se muevan las palabras en la lista*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: system-ui, sans-serif;
+    font-weight: 500;   
+    cursor: pointer;
+}
+  
+.div_blanco {
+    background-color: #fff;
+    height: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.nav_menu, /* Para que ambos tengan la misma altura */
+.div_blanco {
+  height: 100%;
+}
+
+/* entry boton busqueda ocultar-revelar-centrar*/
+
+.div_entrada_padre{
+    display: block;
+    position: absolute;
+    top: 175%; /* top sube*/
+    left: 180%;
+    transform: translateX(-110%); /* ajustar para centrar exacto calcular hasta que quede lo mas cerca del medio probar.*/
+    z-index: 10;
+}
+.div_entrada_hijo { 
+    position: relative;
+    top: 245%;  /* Se movera segun su papa*/
+    
+}
+.entrada_invisible{
+    display: none; /* desaparecer div*/
+}
+
+.entrada_invisible input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: none; 
+}
+.organizar_div_invisible{
+    display: grid;
+    grid-template-columns: auto 1fr; /* ícono + input */
+    align-items: center;
+    justify-content: start;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 70px; /* 20px arriba y abajo  10px izquieda derecha */
+    gap: 15px; 
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border: 1px solid #cdcdcd;
+    height: 50px;
+    width: 1000px; /* ajusta el tamaño del input */
+}

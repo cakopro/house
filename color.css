@@ -1,0 +1,29 @@
+.link_region{
+    color: rgb(55, 157, 255);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.usuario_contenedor{
+    color: rgb(0, 0, 0);
+}
+
+.pregion{
+    color: rgb(78, 78, 78);
+}
+
+.div_centro_fila1{
+    color: #010101;
+}
+.naranjo p{
+    color: orangered;
+}
+
+.color_footer{
+    color: white;
+}
+
+
+
+

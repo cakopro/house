@@ -1,0 +1,311 @@
+.container_main{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    width: 100%;
+}
+
+.fila1_Imagen_principal_main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.imagen_main {
+    width: 100%; 
+    max-width: 100%; 
+    display: block;
+    margin: 0 auto; 
+}
+
+.div_blanco_main{
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px 0; /* espacio arriba y abajo */
+}
+
+/* DIV de contenido */
+.fil2_main{
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.fil2_contenido_centrado {
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 5px;
+}
+/* lado izquierdo de oferta limitada p y ver todo */
+.container_fila_morada {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(44, 0, 88);
+    width: 90%; 
+    margin: 20px auto; /* Centrado y separación superior/inferior */
+}
+
+.interior_container_morado{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    place-items: center; 
+    gap: 25px;
+}
+
+.ofertas_imperdibles{
+    display: grid;
+    justify-items: start;
+    gap: 20;
+}
+.ofertas_imperdibles h3{
+    color: white;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    margin-left: 30px; 
+}
+.div_naranjo_fila_morada{
+    display: grid;
+    width: 100px;
+    height: 29px;
+    background-color: orangered;
+    place-items: center;
+    color : #fff;
+    cursor: pointer;
+    border-radius: 10px;  
+}
+/* lado izquierdo de oferta limitada p y ver todo */
+.fila_morada_centro{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: start;
+    justify-content: start;
+    margin-right: 200px;
+}
+
+.icono_reloj{
+    display: grid;
+    justify-content: start;
+    align-items: bottom; 
+    margin-right: 10px; /* Separar imagen de la lista que esta a la derecha*/
+}
+
+.lista_numeros {
+    list-style: none;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;      /* espacio entre los numeros */
+    padding: 0;     /* remueve espacios*/
+    margin: 0;
+}
+.lista_numeros li{
+    width: 33px;
+    height: 33px;
+    border-radius: 10px;
+    background-color: rgb(185, 174, 174);
+    display: grid;
+    border: 1px solid whitesmoke;
+    place-items: center;
+}
+
+.lista_numeros li p{
+    margin: 0;    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+.etiquetas_dhms {
+    grid-column: 2; /* va justo debajo, misma columna */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+.etiquetas_dhms li p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    margin-left: -5px; /* mover para que quede alineado con los indicadores de numeros*/
+}
+
+/*  CENTRO OFERTAS DESTACADAS H1 */
+.div_centro_main_fila_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.div_centro_main_fila_2 h1{
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    align-content: center;
+    white-space: nowrap;
+    color:black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ULTIMA FILA DEL CENTRO MAIN. */
+.contenedor_fila3 {
+    width: 90%;         
+    margin: 0 auto;   
+    margin-bottom: 30px;
+}
+.multiples_img_ofer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*columnas */
+    gap: 20px;
+    justify-content: center;
+}
+
+.container_fila3_main_ofertas{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container_cerveza{
+    object-fit: fill;
+    display: block;
+}
+.estrellas{
+    display: grid;
+    justify-content: start;
+    justify-items: start;
+    width: 90%;         
+    margin: 0 auto; 
+}
+
+.texto_fila3_main_ofertas{
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-items: start;
+    width: 90%;         
+    margin: 0 auto; 
+    margin-left: 5px;
+}
+
+.bebidas{
+    display: grid;
+    justify-content: start;
+}
+
+.Pack_bebidas{
+    display: grid;
+    justify-content: start;
+}
+
+.bebidas p{
+    margin: 0;
+    justify-content: bottom;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    color: gray;
+    font-weight: 500;
+}
+.Pack_bebidas p{
+    margin: 0;
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: gray;
+    font-weight: 500;
+}
+/* Precios*/
+.precios{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90%;         
+    margin: 0 auto; 
+}
+
+.precio_sin_ofertas{
+    display: grid;
+    margin-left: -10px; /* alejar*/
+    justify-items: center;
+    justify-content: start;
+}
+.precio_sin_ofertas p{
+    text-decoration: line-through;
+    color: gray; /* color para el antiguo precio*/
+}
+
+.precio_oferta{
+    display: grid;
+    justify-content: end;
+    justify-items: end;
+    margin-left: 100px;
+}
+.precio_oferta p{
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 1000;
+}
+/*Precios  fin*/
+
+/* Botones*/
+.botones{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 90%;         
+    margin: 0 5px; /* espacio*/
+    gap: 20px;
+    margin-left: 5px; /*para dar espacio */
+    margin-bottom: 20px; 
+}
+
+.boton_mas_menos{
+    display: grid;
+    width: 100%;
+}
+
+.lista_botones {
+    display: grid;
+    grid-template-columns: repeat(3, 40px); 
+    gap: 0px; /*separacion */
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.lista_botones li{
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lista_botones li p{
+    color: red;
+    margin: 0;
+}
+.botone_negro{
+    display: grid;
+    place-items: center;
+    background-color: black;
+    height: 35px; 
+    width: 100%; 
+    min-width: 150px;
+    border: none;
+}
+
+.botone_negro p{
+    margin: 0;
+    color: #fff;
+    white-space: nowrap;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 11px;
+}
